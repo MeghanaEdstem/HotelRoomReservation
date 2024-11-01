@@ -108,3 +108,4 @@ D:\C#\HotelRoomReservation\HotelRoomReservationApi\obj\Debug\net8.0\refint\Hotel
 D:\C#\HotelRoomReservation\HotelRoomReservationApi\obj\Debug\net8.0\HotelRoomReservationApi.pdb
 D:\C#\HotelRoomReservation\HotelRoomReservationApi\obj\Debug\net8.0\HotelRoomReservationApi.genruntimeconfig.cache
 D:\C#\HotelRoomReservation\HotelRoomReservationApi\obj\Debug\net8.0\ref\HotelRoomReservationApi.dll
+D:\C#\HotelRoomReservation\HotelRoomReservationApi\obj\Debug\net8.0\HotelRoomReservationApi.sourcelink.json

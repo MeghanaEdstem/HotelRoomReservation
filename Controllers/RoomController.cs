@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using HotelRoomReservationApi.Service;
 using Microsoft.EntityFrameworkCore;
 using HotelRoomReservationApi.Models.Entities;
+using HotelRoomReservationApi.Repository;
+
 
 namespace HotelRoomReservationApi.Controllers
 {
@@ -11,12 +13,10 @@ namespace HotelRoomReservationApi.Controllers
     public class RoomsController : ControllerBase
     {
         private readonly IRoomService _roomService;
-        private readonly DbContext _dbContext;
 
-        public RoomsController(IRoomService roomService, DbContext dbContext)
+        public RoomsController(IRoomService roomService)
         {
             _roomService = roomService;
-            _dbContext = dbContext;
         }
 
         [HttpGet("available")]
@@ -32,6 +32,18 @@ namespace HotelRoomReservationApi.Controllers
         {
             var report = _roomService.GetOccupancyReport(date);
             return Ok(report);
+        }
+        [HttpGet("all")]
+        public IActionResult GetAllRooms()
+        {
+            var allRooms = _roomService.GetAllRooms();
+            return Ok(allRooms);
+        }
+        [HttpPost]
+        public IActionResult AddRooms(CreateRoomDto roomDto)
+        {
+            var createdRoom = _roomService.CreateRoom(roomDto);
+            return Ok(createdRoom);
         }
     }
 }

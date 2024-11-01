@@ -38,6 +38,32 @@
   },
   {
     "ContainingType": "HotelRoomReservationApi.Controllers.RoomsController",
+    "Method": "AddRooms",
+    "RelativePath": "api/Rooms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roomDto",
+        "Type": "HotelRoomReservationApi.Models.Dto.CreateRoomDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelRoomReservationApi.Controllers.RoomsController",
+    "Method": "GetAllRooms",
+    "RelativePath": "api/Rooms/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelRoomReservationApi.Controllers.RoomsController",
     "Method": "GetAvailableRooms",
     "RelativePath": "api/Rooms/available",
     "HttpMethod": "GET",
